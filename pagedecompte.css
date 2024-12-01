@@ -1,0 +1,502 @@
+/*reinitilisation des styles par defaut*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans regular" "Inter", sans-serif;
+    box-sizing: border-box;
+}
+    
+body{
+    background-color: #f0f4ff;
+    color: #333;
+}
+/*partie haeder*/
+header{
+    height: 5rem;
+    background: linear-gradient(
+        90deg,
+        #fefefe 15%,
+        #fefefe  100%
+    );
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10);
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.hamburger{
+    display: none;
+}
+.barre ul{
+    display: flex;
+}
+.barre ul li a{
+    display: block;
+    color: #0a0a0a;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px; 
+}
+
+.barre ul li a:hover{
+    color: #383375;
+    background: #bfc4ce;
+}
+#cart-icon{
+    /* font-size: 1rem; */
+    cursor: pointer;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    min-height: 100vh;
+    background: white;
+    padding: 20px;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3;
+}
+.cart.ative{
+    right: 0;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1px;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-produit-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid rgb(150, 109, 204);
+    outline-color: #7f8288;
+    width: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 1rem;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: red;
+    color: darkgray;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background: black;
+}
+#close{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.present{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+.my{
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+/*formulaire connecxion*/
+
+#prés{
+    display: block;
+     height: calc(155vh - 200px);
+     background-color: white;
+}
+
+#prés .titre .po .créer{
+    flex: 1;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 1rem;
+}
+
+/* .form{
+    height: 400px;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1em;
+    margin-bottom: 20px;
+    text-decoration: none;    
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50PX;
+    background-color: wheat;
+
+}
+
+.form a input{
+    border: none;
+    background-color: aqua;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.form a input:hover{
+    background: rgba(0, 255, 255, 0.33);
+}
+.form a input{
+    border: none;
+    background-color: aqua;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s all;
+}
+.valider{
+    border: none;
+    background-color: aqua;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s all;
+    margin-top: 10px;
+}
+.valider:hover{
+    background: rgba(0, 255, 255, 0.33);
+}
+
+.nom{
+
+    margin: 10px;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+
+}
+.noms{
+
+    margin: 10px;
+    height: 50px;
+    width: 550px;
+    text-align: center;
+}
+ */
+ 
+ .conex a input {
+    display: flex;
+    margin-left: 1200px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#prés .titre  {
+    margin-left: 115px;
+    padding: 0.8em 1rem;
+    }
+
+.conex input:hover{
+    background-color: #333;
+
+}
+ .po form{
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+ }
+ 
+.po p{
+    flex: 1;
+    /* width: 50%; */
+    display: block;
+    margin: auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+ .po form input[type="text"], input[type="email"], input[type="password"]{
+    width: 100%;
+    padding: 0.8em 1rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    transition: 0.3s;
+ }
+ .po form input:focus{
+    border: 1px solid #cd9ce0;
+ }
+  form input[type="button"]{
+   display: block;
+   margin: auto;
+ 
+ }
+ .po form input[type="button"]{
+    margin-top: 1rem;
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.9rem 1rem;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.po form input[type="button"]:hover{
+    background-color: #333;
+}
+
+.créer{
+    margin-top: 1rem;
+    text-align: center;
+}
+.créer .ade{
+    width: 500px;
+}
+
+
+/*footer*/
+
+#pied{
+ display: none;
+    }
+
+footer{
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+    background: linear-gradient(
+        90deg,
+        rgb(246, 248, 252) 15%,
+        rgb(240, 250, 250) 100%
+    );
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    
+}
+.bout a{
+    display: block;
+    color: #0a0a0a;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px; 
+}
+.bout a:hover{
+    color: #383375;
+}
+
+.info a{
+    display: block;
+    color: #0a0a0a;
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px; 
+}
+.info a:hover{
+    color: #383375;
+}
+.cond a{
+    display: block;
+    color: #0a0a0a;
+    
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+.cond a:hover{
+    color: #383375;
+}
+#appli{
+    width: 100%;
+    height: 20vh;
+    border-radius: 5px;
+    background: linear-gradient(
+        90deg,
+        rgb(246, 248, 252) 15%,
+        rgb(240, 250, 250) 100%
+    );
+    text-align: center;
+
+    align-items: center;
+    
+}
+.devise a{
+    color: #0a0a0a;
+}
+.devise a:hover{
+    color: #383375;
+}
+@media screen and (max-width:690px) {
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+.hamburger .line{
+    width: 20px;
+    height: 2px;
+    background: black;
+    margin: 5px 0;
+}
+.barre{
+    height: 0;
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    left: 0px;
+    right: 200px;
+   
+    background:  linear-gradient(
+        90deg,
+        rgb(182, 203, 228) 15%,
+        rgb(111, 155, 196) 100%
+    );;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.barre.active {
+    height: 300px;
+    }
+.barre ul{
+    margin:  auto;
+    margin-top: 2rem;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.barre.active ul{
+    opacity: 1;
+}
+.barre ul li a {
+    margin-bottom: 12px;
+}
+
+.po p{
+    flex-direction: column;
+    gap: 2rem;
+}
+.conex a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conex a input {  
+    margin-left: auto;
+    margin-right: 20px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    #pied{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3rem;
+        background: linear-gradient(
+            90deg,
+            #fefefe 15%,
+            #fefefe  100%
+        );
+        box-shadow: 0 1px 4px hsl(0 4% 15% / 10);
+        color: #0a0a0a;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        }
+        
+        #pied :hover{
+            color: #4135c5;
+        }
+        .boutique{
+            color: #0a0a0a;
+        }
+        .sauhait{
+            color: #0a0a0a;
+        }
+        .compte{
+            color: #0a0a0a; 
+        }
+}

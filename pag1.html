@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Linking font-awesome -->
+    <link href='https://unpkg.com/boxicons@2.1.1/dist/boxicons.js' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Linking swiperJS CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="titre">
+            <img src="Ojbet/magasin-en-ligne-de-commerce-électronique-concept-d-affaires-icône-ou-logo-simple-vecteur-122692033.jpg" width="30px">
+             <h6>L'univers des perles</h6>
+        </div>
+        
+        <nav class="barre">
+            <ul>
+                <li> <a href="pag1.html">Accueil</a> </li>
+                <li> <a href="pearlifya.html">Décoration</a> </li>
+                <li> <a href="pearlifyb.html">Sacs</a> </li>
+                <li> <a href="">bijoux</a> </li>
+                <li> <a href="pagedecompte.html">Compte</a> </li>
+            </ul>
+        </nav>
+       
+        <div class="b">
+            <div style="position: relative; display: inline-block;">
+                <i class="fa-solid fa-bag-shopping" id="cart-icon" ></i>
+                <span id="cart-count" style="position: absolute; top: -5px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 3px 6px; font-size: 8px;">0</span>
+            </div>
+          
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+<!-- 
+                    <div class="cart-box">
+                       
+                        
+                    </div> -->
+                </div>
+                <!-- Total -->
+                 <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                 </div>
+                 <!-- Buy button -->
+                 <a href="paiement.html" target="_blank"></a>
+                 <button type="button" class="btn-buy" > Buy Now</button>
+                 
+               
+                  <!-- cart close -->
+                   <i class="fa-solid fa-close" id="close"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="pad1">
+            <div class="par1">
+                <h3>Découvrez les créations uniques <br> et personnalisées</h3>
+                <div class="ajout">
+                    <!-- <img src="imgage/perle2.jpg" class="top"> -->
+                </div>
+              
+                <br>
+                <input type="search" id="recherche" placeholder=" Rechercher ..." value="" onchange="ouvrirPage()">
+                <input type="button" id="bouton-recherche" onclick="ouvrirPage" value="Rechercher">
+                <!-- <button id="bouton-recherche" onclick="ouvrirPage">Rechercher</button> -->
+            </div>
+        </section>    
+        <section id="pad4">
+            <div class="par2">
+                <h1>L'univers des perles</h1> <br>
+                <h6>à chacun le sein</h6>
+            </div>
+        </section>
+       
+        <section id="pad5">
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="pearlifyb.html" class="card-link">
+                                <img src="Ojbet/IMG-20241018.jpg" alt="card-image" class="card-image">
+                                <p class="badge IMG-2024101">Découvrir</p>
+                                <h2 class="card-title">Sacs de lux et Bijoux</h2>
+                                <button class="card-button"><i class="fa-solid fa-arrow-right"></i>  </button>
+                                             
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="pearlifya.html" class="card-link">
+                                <img src="Ojbet/IMG1.jpg" alt="card-image" class="card-image">
+                                <p class="badge IMG1">Découvrir</p>
+                                <h2 class="card-title">Décoration et standards</h2>
+                                <button class="card-button"><i class="fa-solid fa-arrow-right"></i>  </button>
+                                             
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="pearlifyb.html" class="card-link">
+                                <img src="objzt/IMG-2.jpg" alt="card-image" class="card-image">
+                                <p class="badge IMG-2">Découvrir</p>
+                                <h2 class="card-title">Babouches uniques</h2>
+                                <button class="card-button"><i class="fa-solid fa-arrow-right"></i>  </button>
+                                             
+                            </a>
+                        </li>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </ul>
+                </div>
+            </div>
+           
+        </section>
+        
+        </section>
+        <section id="pad2">
+            <h1 class="pat">Nouvel arrivage</h1><br><br>
+            <div class="par3 " >
+                <div class="shop" >
+                    <img src="Ojbet/IMG-4.jpg" alt="" width="210px" height="219px" class="produit-img">
+                    <h2 class="sisa">Babouches de l'heure </h2>
+                    <span class="price">$25</span>
+                    <i class="fa-solid fa-cart-shopping add-cart" ></i>
+                    <i class="fa-regular fa-heart add-car"></i>
+                </div>
+                <div class="shop">
+                    <img src="images/sac13.jpg" alt="" width="210px" height="219px" class="produit-img">
+                    <h2 class="sisa">Sacs de lux</h2>
+                    <span class="price">$15</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                    <i class="fa-regular fa-heart add-car"></i>
+                </div>
+                <div class="shop">
+                    <img src="Ojbet/IMG-20241018-WA0054.jpg" alt="" width="210px" height="219px" class="produit-img">
+                    <h2 class="sisa">Découration ultra</h2>
+                    <span class="price">$25</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                    <i class="fa-regular fa-heart add-car"></i>
+                </div>
+                <div class="shop">
+                    <img src="images/sac15.jpg" alt="" width="210px" height="219px" class="produit-img">
+                    <h2 class="sisa">Sacs de style</h2>
+                    <span class="price">$30</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                    <i class="fa-regular fa-heart add-car"></i>
+                   
+                </div>
+            </div>
+            
+            <hr class="ligne">
+      
+        </section>
+        <section id="pied">
+            <a href="pearlifyb.html"><div class="boutique">
+                <i class="fa-solid fa-shop"></i>
+                <h5>Boutique</h5>
+            </div></a>
+            <a href=""><div class="sauhait">
+                <i class="fa-regular fa-heart"></i>
+                <h5>Souhait</h5>
+            </div></a>
+            <a href="pagedecompte.html"><div class="compte">
+                <i class="fa-regular fa-user"></i>
+                <h5>Mon compte</h5>
+            </div></a>
+            
+        </section>
+        <footer>
+            <div class="bout">
+                <a href="">Nouveau</a> 
+                <a href="">Décoration</a> 
+                <a href=""> Tendances Femmes</a> 
+            </div> 
+            <div class="info"> 
+                <a href="">Notre boutique</a> 
+                <a href="">A propos</a> 
+                <a href="">S'abonne</a>
+            </div>
+            <div class="cond">
+                <a href="">Termes et conditions</a> 
+                <a href="">Politiques de boutique</a> 
+                <a href="">Livraison et Retours</a> 
+                <a href="">Moyen de paiement</a>
+            </div>
+           
+        </footer>
+        
+        <section id="appli">
+            <div class="lien">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-google" style="color: #f32112;"></i>
+            </div>
+            <div class="devise">
+                <p>@Universdesperles tout droit reserve en 2024</p>
+                <a href="mailto:@Universdesperles">Contact</a>
+            </div>
+            <div class="">
+                <table>
+                    <thead>
+                        <th>N°</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </thead>
+                    <tbody>
+                        <td>Menbres du groupe(FI2 GI, CS6)</td>
+                        <td>chef du groupe: KUITCHOUA CEDRIC LAUDEZ</td>
+                        <td>KUETETSA SANE EMERICK</td>
+                        <td> LANDO TCHOUTEZO ANGE EVA</td>
+                        <td>LABOH YOUONG GUYLENE</td>
+                        <td>KOUAKAM TENGANG CHARLIE SILVANA</td>
+                    </tbody>
+                </table>
+            </div>
+           </section>
+           
+        <script src="Index.js"></script>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                barre  = document.querySelector(".barre");
+                barre.classList.toggle("active");
+            }
+           </script>
+
+            <!-- Barre de recherche fonctionnelle -->
+           <script>
+            function ouvrirPage(){
+                var a = document.getElementById("recherche").value;
+                if(a === "décoration"){
+                    window.open("/pearlifya.html");
+                }
+                if(a === "sacs"){
+                    window.open("/pearlifyb.html");
+                }
+            }
+            
+           </script>
+
+        <!-- Linking SwiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+           <!-- Linking custom script -->
+        <script src="scprit.js"></script>
+           
+            
+            <div class="love">
+                <i class="fa-solid fa-cart-shopping "></i>
+               
+                <i class="fa-solid fa-shop"></i>
+                
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-trash"></i>
+                
+                <i class="fa-brands fa-whatsapp" style="color: #66eac3;"></i>
+               
+            </div>
+    </main>
+    <i class="fa-sharp fa-solid fa-arrow-left"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                                
+</body>
+</html>

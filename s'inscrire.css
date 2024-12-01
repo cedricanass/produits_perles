@@ -1,0 +1,394 @@
+/*reinitilisation des styles par defaut*/
+*{
+    border-radius: 10px solid ;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans regular";
+    box-sizing: border-box;
+}
+.present{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+.my{
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+/*partie haeder*/
+header{
+    height: 5rem;
+    background: linear-gradient(
+        90deg,
+        #fefefe 15%,
+        #fefefe  100%
+    );
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.hamburger{
+    display: none;
+}
+.barre ul{
+    display: flex;
+}
+.barre ul li a{
+    display: block;
+    color: #0a0a0a;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px; 
+}
+
+.barre ul li a:hover{
+    color: #383375;
+    background: #bfc4ce;
+}
+#cart-icon{
+    /* font-size: 1rem; */
+    cursor: pointer;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    min-height: 100vh;
+    background: white;
+    padding: 20px;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3;
+}
+.cart.ative{
+    right: 0;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1px;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-produit-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid rgb(150, 109, 204);
+    outline-color: #7f8288;
+    width: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 1rem;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: red;
+    color: darkgray;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background: black;
+}
+#close{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+/*Tableau de bord */
+#Compte{
+    padding: 0 2rem; 
+}
+#Compte h1{
+    margin-top: 4rem;
+}
+#Compte hr{
+    margin-top: 0.5rem;
+}
+#Compte .bord{
+    margin-top: 0.5rem;
+}
+#Compte .bord a{
+    display: block;
+    color: #181818;
+   
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 1px;
+    transition: 0.3s;
+    margin: 0 5px; 
+}
+#Compte .bord a:hover{
+    color: #6156d8;
+    background: rgba(194, 194, 216, 0.39);
+}
+/* paragraphe */
+#Compte .laison{
+    margin-top: 4rem;
+    flex: 1;
+    display: block;
+    margin: auto;
+    width: 85%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+/* Enter des différents éléments */
+
+#cont{
+    margin-top: 2rem;
+    text-align: center;
+    height: 600px;
+    width: 80%;
+    background: linear-gradient(
+        90deg,
+        #bdc5ca 15%,
+        #dadfdf 100%
+    );
+   align-items: center;
+   display: block;
+   margin: auto;
+
+}
+.service-list{
+    display: block;
+}
+.service-list .service{
+    margin: auto;
+    margin-top: 1rem;
+    flex: 1;
+    background-color: white;
+    width: 80%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 3px;
+}
+.service a{
+    color: #0a0a0a;
+}
+
+/*footer*/
+#pied{
+    display: none;
+    }
+
+footer{
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+    background: linear-gradient(
+        90deg,
+        rgb(246, 248, 252) 15%,
+        rgb(240, 250, 250) 100%
+    );
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    
+}
+.bout a{
+    display: block;
+    color: #0a0a0a;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px; 
+}
+.bout a:hover{
+    color: #383375;
+}
+
+.info a{
+    display: block;
+    color: #0a0a0a;
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px; 
+}
+.info a:hover{
+    color: #383375;
+}
+.cond a{
+    display: block;
+    color: #0a0a0a;
+    
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+.cond a:hover{
+    color: #383375;
+}
+#appli{
+    width: 100%;
+    height: 20vh;
+    border-radius: 5px;
+    background: linear-gradient(
+        90deg,
+        rgb(246, 248, 252) 15%,
+        rgb(240, 250, 250) 100%
+    );
+    text-align: center;
+
+    align-items: center;
+    
+}
+.devise a{
+    color: #0a0a0a;
+}
+.devise a:hover{
+    color: #383375;
+}
+@media screen and (max-width:690px) {
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+.hamburger .line{
+    width: 20px;
+    height: 2px;
+    background: black;
+    margin: 5px 0;
+}
+.barre{
+    height: 0;
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    left: 0px;
+    right: 200px;
+   
+    background:  linear-gradient(
+        90deg,
+        rgb(182, 203, 228) 15%,
+        rgb(111, 155, 196) 100%
+    );;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.barre.active {
+    height: 300px;
+    }
+.barre ul{
+    margin:  auto;
+        margin-top: 2rem;
+        display: block;
+        width: fit-content;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+
+}
+.barre.active ul{
+    opacity: 1;
+}
+.barre ul li a {
+    margin-bottom: 12px;
+}
+.service-list .service{
+    width: 80%;
+}
+}
+@media screen and (max-width: 768px) {
+    #pied{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3rem;
+        background: linear-gradient(
+            90deg,
+            #fefefe 15%,
+            #fefefe  100%
+        );
+        box-shadow: 0 1px 4px hsl(0 4% 15% / 10);
+        color: #0a0a0a;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        }
+        
+        #pied :hover{
+            color: #4135c5;
+        }
+        .boutique{
+            color: #0a0a0a;
+        }
+        .sauhait{
+            color: #0a0a0a;
+        }
+        .compte{
+            color: #0a0a0a; 
+        }
+}

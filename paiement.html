@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paiement.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/dist/boxicons.js' rel='stylesheet'>
+
+    <!-- Linking font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>page de paiement</title>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="titre">
+            <img src="Ojbet/magasin-en-ligne-de-commerce-électronique-concept-d-affaires-icône-ou-logo-simple-vecteur-122692033.jpg" width="30px">
+             <h6>L'univers des perles</h6>
+        </div>
+        
+        <nav class="barre">
+            <ul>
+                <li>  <a href="pag1.html">Accueil</a></li>
+                <li><a href="pearlifya.html">Décoration</a></li>
+                <li> <a href="pearlifyb.html">Sacs</a></li>
+                <li><a href="">bijoux</a></li>
+                <li> <a href="pagedecompte.html">Compte</a></li>
+            </ul>
+        </nav>
+       
+        <div class="b">
+            <div style="position: relative; display: inline-block;">
+                <i class="fa-solid fa-bag-shopping" id="cart-icon" ></i>
+                <span id="cart-count" style="position: absolute; top: -5px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 3px 6px; font-size: 8px;">0</span>
+            </div>
+          
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <div class="cart-content">
+                 
+                        <!-- Remove cart -->
+                        <i class="fa-solid fa-trash cart-remove" ></i>
+                        
+                    
+                </div>
+                <!-- Total -->
+                 <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                 </div>
+                 <!-- By button -->
+                  <a href="paiement.html"> <button type="button" class="btn-buy"> Buy Now</button></a>
+                  <!-- cart close -->
+                   <i class="fa-solid fa-close" id="close"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="titre">
+        <div class="present">
+            <h3>
+                <strong>
+                    <p class="my">CHECKOUT</p>
+                </strong>
+            </h3>
+        </div>
+    </section>
+    
+ <section id="facture"> 
+    <div class="instruction">
+        <br>
+        <p>Deja client? <u style="color: red;"><font color='red'> Cliquer ici pour vous connecter</u>
+        </font><br><br>Avez vous un code promo? <u style="color: red;"><font color="red"> Cliquer ici pour saisir votre  code</font></u> </p>
+    </div>
+    <div class="wrapper" >
+        <form>
+            <h2 class="payer" ><strong>DETAILS DE FACTURATION </strong></h2><br>
+            <!-- <div class="identifiant">  -->
+            <label>Nom et Prenom <font color="red">*</font></label><br>
+            <input type="text" id="nomPrenom" name="NomPrenom" required ><br><br>
+            <label>Adresse du client <font color="red">*</font></label><br>
+            <input type="text"  name="Adresse"><br><br>
+            <label>Telephone <font color="red">*</font></label><br>
+            <input type="tel"><br><br>
+            <label>Pays</label><br>
+            <select>   
+                <option>cameroun</option>
+                <option>France</option>
+                <option>Congo</option>
+                <option>Cote d'ivoire</option>
+                <option>USA</option>
+                <option>Espagne</option>
+            </select><br><br>
+            <input type="checkbox" value="créer un compte?"> créer un compte?<br><br>
+            <input type="checkbox" value="Expedier a une adresse differente?"> Expedier a une adresse differente?<br><br>
+            <p>Notes de commande(facultatif) </p><br>
+            <textarea name="" id="" cols="35" rows="10" placeholder="commentaires concernant votre commande,
+ex:consigne de livraison."></textarea>
+            <!-- </div> -->
+        </form>
+    </div>
+
+</section>
+
+         
+</section  >
+<section id="commande">
+    <div class="com">
+        <h2><strong>VOTRE COMMANDE</strong></h2>
+    </div>
+   <div id="commande-section">
+        <div id="commande-items"></div>
+        <p style="float: right; text-align: right; ">Total : $<span id="commande-total"></span></p>   
+   </div>
+  <div class="livraison">
+      <form >
+          <label>Paiement à la livraison</label> <br>
+          <br>
+            <select>
+                <option>payer en espece</option>
+                 <option >payer par compte</option>
+            </select>
+       </form>
+    </div><br><br>
+    <div>
+        <button class="valider">Valider votre commande</button>
+    </div>
+    <br><br><br><br>
+</section>
+
+
+
+
+<br><br><br><br><br><br>
+<section id="pied">
+    <a href="pearlifyb.html"><div class="boutique">
+        <i class="fa-solid fa-shop"></i>
+        <h5>Boutique</h5>
+    </div></a>
+    <a href=""><div class="sauhait">
+        <i class="fa-regular fa-heart"></i>
+        <h5>Souhait</h5>
+    </div></a>
+    <a href="pagedecompte.html"><div class="compte">
+        <i class="fa-regular fa-user"></i>
+        <h5>Mon compte</h5>
+    </div></a>
+    
+</section>
+<footer>
+    <div class="bout">
+        <a href="">Nouveau</a> 
+        <a href="">Décoration</a> 
+        <a href=""> Tendances Femmes</a> 
+    </div> 
+    <div class="info"> 
+        <a href="">Notre boutique</a> 
+        <a href="">A propos</a> 
+        <a href="">S'abonne</a>
+    </div>
+    <div class="cond">
+        <a href="">Termes et conditions</a> 
+        <a href="">Politiques de boutique</a> 
+        <a href="">Livraison et Retours</a> 
+        <a href="">Moyen de paiement</a>
+    </div>
+   
+</footer>
+
+<section id="appli">
+    <div class="lien">
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-google" style="color: #f32112;"></i>
+    </div>
+    <div class="devise">
+        <p>@Universdesperles tout droit reserve en 2024</p>
+        <a href="mailto:@Universdesperles">Contact</a>
+    </div>
+   </section>
+
+<script src="Index.js"></script>
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        barre  = document.querySelector(".barre");
+        barre.classList.toggle("active");
+    }
+   </script>
+   <script>
+    // Fonction pour charger et afficher le contenu du panier depuis le localStorage
+
+    document.addEventListener("DOMContentLoaded",  function() {
+        console.log("Chargement du contenu du panier...");
+
+        
+        let commandeSection = document.querySelector("#commande-items");
+        let totalElement = document.querySelector("#commande-total");
+
+        // récupère les articles du panier et le tota à partir de localStorage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        let totalPrice = localStorage.getItem("totalPrice") || "0.00";
+        
+        if (cartItems.length === 0) {
+            commandeSection.innerHTML = "<p>Le panier est vide.</p>";
+            return;
+            
+        }
+        
+        // Génère le code HTML pour affiche chaque produit du panier
+
+        cartItems.forEach(item => {
+            console.log(item.image);
+
+                let itemElement = document.createElement("div");
+                itemElement.classList.add("cart-item");
+                itemElement.style.display = "flex";
+                itemElement.style.alignItems = "center";
+                itemElement.style.marginBottom = "10px";
+                // console.log(item.image);
+                itemElement.innerHTML = ` 
+                <div class="cart-item-image" style="margi-right: 10px;">
+                    <img src="${item.image}" alt="${item.title}" width="50" height="50" onerror="this.src='default-image.jpg'; console.log('Image non trouvée, affichege de l\'image par défaut');"> 
+                       
+                 </div>
+                <div class="cart-item-details" style="flex-grow: 1;">
+                      <p><strong>Produit :</strong> <span style="float: right; text-align: right; color: red;">${item.title}</span></p><br><hr><br>
+                      <p><strong>Prix :</strong>  <span style="float: right; text-align: right; color: red;">$${item.price}</span></p><br><hr><br>
+                      <p><strong>Quantité :</strong>  <span style="float: right; text-align: right; color: red;">${item.quantity}</span></p><br><hr><br>
+                      <p><strong>Sous-total :</strong> <span style="float: right; text-align: right; color: red;">$${(item.price * item.quantity).toFixed(2)}</span></p>
+                </div>
+              
+                  `;
+                commandeSection.appendChild(itemElement);
+            });
+        
+    
+            // let cartItemsList = document.querySelector(".cart-items-list");
+            // cartItemsList.innerHTML = ""; 
+            //vider avant de charger
+
+           
+
+            // Afficher le total
+           totalElement.innerText = totalPrice;
+           console.log("Panier chargé avec succès.")
+        //    totalElement.classList.add("commande-total");
+        //    totalElement.innerHTML = `<p>Total final : $${totalPrice}</p>`;
+        //    commandesection.appendChild(totalElement);
+
+        //   console.log("panier afficher avec succès sur la page de paiement .");
+            
+        
+    }) ; 
+       
+       
+       
+
+    // Appeler la fonction pour charger le contenu du panier lors du chargement de la page
+    // document.addEventListener("DOMContentLoaded", loadCartFromLocalStrorage);
+   </script>
+ <div style="display: flex; justify-content: space-between; width: 100%;">
+                        
+                        <p>></p> 
+                         
+                      </div> 
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panier -l'univer des perles</title>
+    <link rel="stylesheet" href="panier.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="imgage/logo.jpg" alt="logo l'univer des perles">
+            <h1>L'univer des perles</h1>
+            <p>vente en ligne pour tous</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">boutique</a></li>
+                <li><a href="#">souhaits</a></li>
+                <li><a href="#">panier <span class="cart-count">1</span></a></li>
+                <li><a href="#">mon panier</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-section">
+        <section class="cart-section">
+            <h2>votre panier</h2>
+            <div class="cart-item">
+                <img src="imgage/perle1.jpg" alt="">
+                <div class="item-details">
+                    <h3>colier
+                    </h3>
+                    <p>vendeur:tech 237</p>
+                    <p class="price">15000 cfa</p>
+                    <div class="quantity">
+                        <button class="btn-decrease">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="btn-decrease">+</button>
+                    </div>
+                    <p class="subtotal">sous-total:15000 cfa</p>
+                    <button class="btn-remove">retirer</button>
+                    <button class="btn-add" onclick="addToCart('colier', 15000)">ajouter au panier</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="imgage/perle3.jpg" alt="barbouche en perle">
+                <div class="item-details">
+                    <h3>Barbouche en perle</h3>
+                    <p class="price">prix:8000 cfa</p>
+                    <div class="quantity">
+                        <button class="btn-decrease">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="btn-increase">+</button>
+                    </div>
+                    <p class="subtotal">sous-total : 8000 cfa</p>
+                    <button class="btn-remove">retirer</button>
+                    <button class="btn-add" onclick="addToCart('barbouche en perle ', 8000 )">ajouter au panier</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="imgage/perle2.jpg" alt="sac en perles">
+                <div class="item-details">
+                    <h3>Sac en perle</h3>
+                    <p class="price">prix : 20000 cfa</p>
+                    <div class="quantity">
+                        <button class="btn-decrease">-</button>
+                        <input type="number" value="1" class="quantity-input">
+                        <button class="btn-increase">+</button>
+                    </div>
+                    <p class="subtotal">sous-total : 20000 cfa</p>
+                    <button class="btn-remove">retirer</button>
+                    <button class="btn-add" onclick="addToCart('sac a main en perle', 20000)">ajouter au panier</button>
+                </div>
+            </div>
+           
+            <div class="promo-code">
+                <input type="text"paceholder="code-promo">
+                <button class="btn-apply">appliquer le code promo</button>
+            </div>
+            <div class="cart-summary">
+                <h3>Total panier</h3>
+                <p>total: <span class="summary-subtotal"> cfa</span></p>
+                <button class="btn-validate">valider la commande</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 L'univer des perles. tous droits réservés.</p>
+    </footer>
+    <!--lien vers le javaScript externe-->
+    <script src="panier.js"></script>
+    
+</body>
+</html>
